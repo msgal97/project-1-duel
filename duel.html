@@ -2,30 +2,128 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>The Duel</title>
+    <title>Ribbit</title>
     <style>
     div {
+      display: none;
       white-space: pre;
       font-family: monospace;
+    }
+    .visible {
+      display: block;
     }
     </style>
   </head>
   <body>
-    <div id="duel1">
-      ~O  O~
-      &lt;|/\|&gt;
-       |\ |\
-    </div>
-    <div id="duel2">
-      ~O  O~
-      &lt;|--|&gt;
-      / \/ \
-    </div>
-    <div id="duel3">
-      ~O  O~
-      &lt;|\/|&gt;
-       |\ |\
-    </div>
+    <div id="ribbit1" class="visible">
 
+
+
+
+
+            _,-.
+    ,-. ,--'  o )
+    \(,' '  ,,-'
+    ,-.\-.__,\\_
+
+    </div>
+    <div id="ribbit2">
+
+
+
+
+                        _,-.
+                ,-. ,--'  o )
+                \(,' '  ,,-'
+                ,-.\-.__,\\_
+    </div>
+    <div id="ribbit3">
+
+
+
+                                    _,-.
+                            ,-. ,--'  o )
+                            \(,' '  ,,-'
+                            ,-.\-.__,\\_
+    </div>
+    <div id="ribbit4">
+
+
+                                                _,-.
+                                        ,-. ,--'  o )
+                                        \(,' '  ,,-'
+                                        ,-.\-.__,\\_
+    </div>
+    <div id="ribbit5">
+
+                                                            _,-.
+                                                    ,-. ,--'  o )
+                                                    \(,' '  ,,-'
+                                                    ,-.\-.__,\\_
+    </div>
+    <div id="ribbit6">
+                                                                          _,-.
+                                                                  ,-. ,--'  o )
+                                                                  \(,' '  ,,-'
+                                                                  ,-.\-.__,\\_
+    </div>
+    <div id="ribbit7">
+
+                                                                                        _,-.
+                                                                                ,-. ,--'  o )
+                                                                                \(,' '  ,,-'
+                                                                                ,-.\-.__,\\_
+    </div>
+    <div id="ribbit8">
+
+
+                                                                                                      _,-.
+                                                                                              ,-. ,--'  o )
+                                                                                              \(,' '  ,,-'
+                                                                                              ,-.\-.__,\\_
+    </div>
+    <div id="ribbit9">
+
+
+
+                                                                                                                      _,-.
+                                                                                                              ,-. ,--'  o )
+                                                                                                              \(,' '  ,,-'
+                                                                                                              ,-.\-.__,\\_
+    </div>
+    <div id="ribbit10">
+
+
+
+
+                                                                                                                                        _,-.
+                                                                                                                                ,-. ,--'  o )
+                                                                                                                                \(,' '  ,,-'
+                                                                                                                                ,-.\-.__,\\_
+    </div>
+    <div id="ribbit11">
+
+
+
+                                                                                                                                                          _,-.
+                                                                                                                                                  ,-. ,--'  o )
+                                                                                                                                                  \(,' '  ,,-'
+                                                                                                                                                  ,-.\-.__,\\_
+    </div>
+      <script>
+        var frame = 1;
+      setInterval(function() {
+        console.log(frame);
+        var el = document.getElementById('ribbit' + frame);
+        el.className = '';
+        frame = frame + 1;
+        if (frame ==12) {
+          frame = 1;
+        }
+        el = document.getElementById('ribbit' + frame);
+        el.className = 'visible';
+      }, 150);
+
+      </script>
   </body>
 </html>
